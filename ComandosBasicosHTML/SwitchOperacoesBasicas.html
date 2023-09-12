@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Switch com operações matemáticas </title>
+	<script language="javascript">
+	
+	var pnum, snum, op, A, M, D, S;
+	
+	pnum=window.prompt("Digite o primeiro número");
+	pnum=parseInt(pnum);
+	
+	snum=window.prompt("Digite o segundo número");
+	snum=parseInt(snum);
+	
+	op=window.prompt("Digite a primeira letra da operação que deseja realizar (em maiúsculo)");
+	
+	
+	A = pnum + snum;
+	M = pnum * snum;
+	D = pnum / snum;
+	S = pnum - snum;
+	
+	
+	switch(op){
+	   case "A" :{
+	   alert("A soma dos dois números escolhidos é " + A);
+	   break;
+	   }
+	    case "M" :{
+	   alert("A multiplicação dos dois números escolhidos é: " + M);
+	   break;
+	   }
+	    case "D" :{
+	   alert("A divisão dos dois números escolhidos é: " + D);
+	   break;
+	   }
+	    case "S" :{
+	   alert("A subtração dos dois números escolhidos é: " + S);
+	   break;
+	   }
+	    default:{
+	   alert ("Espaço (s) deixado (s) em branco, houve letras nos lugares de número, letras minúsculas ou outros possíveis erro de digitação");
+	   }
+}
+	   </script>
+</head>
+<body>
+</body>
+</html>

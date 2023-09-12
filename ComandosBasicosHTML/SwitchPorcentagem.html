@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Switch and Case com porcentagem </title>
+	<script language="javascript">
+	
+	var valor, pag, des, acre, porcentagem;
+	
+	valor=window.prompt("Digite o valor do produto desejado");
+	valor=parseInt(valor);
+	
+	pag=window.prompt("Digite a forma de pagamento desejada (1 para a vista e 2 para a prazo)");
+	pag=parseInt(pag);
+	
+	porcentagem = valor*10/100;
+	des = valor - porcentagem;
+	acre = valor + porcentagem;
+
+	switch(pag){
+	   case 1 :{
+	   alert("Houve um desconto de 10% na compra, totalizando em reais: " + des);
+	   break;
+	   }
+	    case 2 :{
+	   alert("Houve um acréscimo de 10% na compra, totalizando em reais: " + acre);
+	   break;
+	   }
+	    
+	    default:{
+	   alert ("Houve espaço (s) em branco, ou erro de digitação");
+	   }
+}
+	   </script>
+</head>
+<body>
+</body>
+</html>
